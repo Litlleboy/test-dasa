@@ -40,7 +40,6 @@ public class TodoSteps {
     @Step
     public void exibeTaskInserida() {
         List<String> listTasks = todoPage.listaItens();
-        getListTask().remove(1);
 
         assertThat(listTasks, containsInAnyOrder(getListTask().toArray()));
     }
