@@ -2,8 +2,8 @@
   <main id="app">
     <h1>To Do</h1>
     <nav>
-      <router-link to="/todo" active-class="active">TODO</router-link>
-      <router-link to="/done" active-class="active">DONE</router-link>
+      <router-link to="/todo" id="todo" active-class="active">TODO</router-link>
+      <router-link to="/done" id="done" active-class="active">DONE</router-link>
     </nav>
     <router-view />
   </main>

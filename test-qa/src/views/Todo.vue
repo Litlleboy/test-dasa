@@ -2,16 +2,17 @@
   <section class="page">
     <form @submit.prevent="add">
       <input
+        id="field_todoTask"
         type="text"
         v-model="task"
         placeholder="You can add more then one using ';'"
       />
-      <button type="reset">
+      <button type="reset" id=btn_todoClearTask>
         <i class="material-icons">
           clear
         </i>
       </button>
-      <button type="submit">
+      <button type="submit" id=btn_todoAddTask>
         <i class="material-icons">
           add
         </i>
