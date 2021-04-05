@@ -2,6 +2,7 @@
   <section class="page">
     <form @submit.prevent="add">
       <input
+        id="field_doneTask"
         type="search"
         :value="text"
         placeholder="Search task"

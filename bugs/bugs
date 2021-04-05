@@ -1,0 +1,43 @@
+Infelizmente não tive tempo hábil para tirar prints de telas ou gravar gif´s, meu fim de semana foi bem corrido! 
+
+Mas segue alguns bugs observados: 
+
+
+1. Ao inserir uma grande quantidade de caracteres no TODO, o layout é quebrado. 
+
+Passos para reproduzir:
+
+* Iniciar o TODO
+* Preencher o campo do TODO com mais de 40 caracteres (pode ocorrer com menos, o ideal é limitar a quantidade de caracteres).
+* Adicionar a nova TASK.
+
+Veja que o Checkbox sumiu, impossibilitando mover para DONE. 
+O ícone do Lixo está fora do layout. 
+
+
+
+2. Ao limpar o campo do TODO, a informação ainda fica armazenada, possibilitando adicionar uma nova tarefa invalida.
+
+Passos para reproduzir: 
+
+* Iniciar o TODO
+* Preencher o campo do TODO
+* Apagar a informação do campo TODO clicando no botão "X"
+* Clicar no botão adicionar
+
+Veja que foi adicionado uma nova tarefa, mesmo com o campo apagado. 
+
+
+
+3. O botão de excluir uma tarefa do DONE não atualiza a lista de tarefas após exclusão.
+
+Passos para reproduzir: 
+
+* Iniciar o TODO
+* Adicionar uma nova tarefa
+* Mover a tarefa adicionada pra DONE clicando no Checkbox
+* Ir para tela Dona
+* Clicar no ícone da lixeira 
+
+Veja que nenhuma refresh é atualizado na tela após exclusão.
+O item será somente excluido ao sair da tela e retornar novamente ou pesquisar por qualquer item.
